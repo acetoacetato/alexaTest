@@ -3,11 +3,22 @@
 <head>
 	<meta charset="utf-8">
 	<!-- <link rel="stylesheet" href="styles.css"> -->
-	<title>Administrador de Fixy</title>
+	<title>Iteach-U</title>
 	<link rel="icon" type="image/png" href="./img/favicon.png" sizes="16x16">
 
 </head>
 <body>
+
+	<table id="Courses">
+		<thead>
+			<tr>
+				<td>nombre Curso</td>
+				<td>Descripción</td>
+				<td>En vivo</td>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
 
 	<!-- Otros de bootstrap -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -47,38 +58,12 @@
 	  // Initialize Firebase
 	  firebase.initializeApp(firebaseConfig);
 	  firebase.analytics();
+	  auth = firebase.auth();
 	</script>
 
 	<script src="app.js"></script>
 
-	<div class="mt-5 mb-3">
-		<h1 class="text-center">Fixy Admin</h1>
-	</div>
-
-	<div id="contenedorUsuario">
-		<input id="emailLogin" type="email" placeholder="Ingresa email" name="">
-		<input id="passwordLogin" i type="password" placeholder="Ingresa contraseña" name="">
-		<button onclick="ingresar()">Entrar</button>
-	</div>
-
-	<section>
-		<div id="contenedorCuerpo"> 
-			<p>
-				Esta es la página web de administración del sistema Fixit. Permite gestionar diversos 
-				parámetros y módulos del sistema.
-			</p>
-			<p>
-				Es necesario ingresar con una cuenta de administrador para poder ver las herramientas
-				 de gestion de usuarios y servicios.
-			</p>
-		</div>
-		<hr>
-		<div>
-			<table class="table" id="tablaServicios">
-				
-			</table>
-		</div>
-	</section>
+	
 
 </body>
 </html>
