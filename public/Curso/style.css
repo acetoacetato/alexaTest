@@ -1,0 +1,21 @@
+.FixedHeightContainer{
+    /* float:right; */
+    height: 250px;
+    width:250px; 
+    padding:3px; 
+    background:gray;
+    
+
+}
+#chatDisplay{
+    height:224px;
+    overflow:auto;
+    background:#fff;
+    word-wrap: break-word;
+}
+
+textarea {
+    width: 256px;
+    height: 20px;
+    resize: none;
+}

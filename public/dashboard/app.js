@@ -55,7 +55,10 @@ function actualizarSiEsUsuarioValido(uid) {
 
 
 actualizarVista = () => {
-    console.log('me actualiza');
+	console.log('me actualiza');
+	document.getElementById('nombreUsr').value = datosUsr.nombre;
+	document.getElementById('rolUsr').value = datosUsr.rol;
+
     var suscripciones = datosUsr.suscripciones;
     var tabla = document.getElementById('Courses').getElementsByTagName('tbody')[0];
     suscripciones.forEach(id => {
